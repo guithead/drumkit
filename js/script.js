@@ -1,8 +1,9 @@
 var drumPads = document.querySelectorAll('.drum').length;
 
-
+//touch action
 for (var i = 0; i < drumPads; i++) {
 	document.querySelectorAll('.drum')[i].addEventListener('touchstart', function() {
+
 			var padInner = this.innerHTML;
 
 			playSound(padInner);
@@ -10,6 +11,7 @@ for (var i = 0; i < drumPads; i++) {
 	});
 }
 
+//keyboard action
 document.addEventListener('keydown', function(event){
 
 	if (event.repeat) return;
@@ -19,6 +21,7 @@ document.addEventListener('keydown', function(event){
 
 });
 
+//play drum samples (using Howler.js -> no latency on touch devices)
 function playSound(key) {
 
 	switch(key) {
@@ -66,6 +69,7 @@ function playSound(key) {
 			}
 }
 
+//highlight active drum pad
 function buttonFlash(currentKey) {
 
 	var activePad = document.querySelector('.' + currentKey);

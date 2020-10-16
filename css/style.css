@@ -19,31 +19,23 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   background-color: #000;
-
   font-family: 'Iron Maiden';
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
-h1 {
+.heading h1 {
   font-size: 5rem;
-  color: #DBEDF3;
+  color: #f4f4f4;
   font-family: 'Iron Maiden';
   margin-top: 0;
-
 }
 
-h2 {
+.heading h2 {
   color: #911c1c;
-}
-
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
 }
 
 .q {
@@ -74,13 +66,9 @@ footer {
 .pads {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: auto;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
+  margin: auto 0;
 }
 
 .drum {
@@ -88,25 +76,21 @@ footer {
   justify-content: center;
   align-items: center;
   outline: none;
-  border: 8px solid #DBEDF3;
+  border: 8px solid #f4f4f4;
   font-size: 4rem;
   font-family: 'Iron Maiden';
-  line-height: 2;
-  font-weight: 900;
+  font-weight: bold;
   color: #911c1c;
-  /*text-shadow: 3px 0 #cecece;*/
-  border-radius: 15px;
-
+  border-radius: .9rem;
   width: 180px;
   height: 180px;
   text-align: center;
-
-  margin: 10px;
-
-  cursor: pointer;
+  margin: .6rem;
 }
 
 footer {
+  color: #f4f4f4;
+  font-family: sans-serif;
   margin-top: auto;
   margin-bottom: 1rem;
 }
@@ -115,4 +99,8 @@ footer a {
   text-decoration: none;
 }
 
+.pressed {
+  box-shadow: 0 3px 4px 0 #f4f4f4;
+  opacity: 0.5;
+}
 
